@@ -1,3 +1,2 @@
-print("hello")
-print("bye")
 print("you wanna chat?")
+print("Lets chat together!")
