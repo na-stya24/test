@@ -14,13 +14,13 @@ class AntiVirus():
     # The recursion function that pass for each file 
     def iterate_files(self,folder_path, append_text_func,exclude_folders):
 
-        try:
+       
             print(f"Processing this: {folder_path}")
 
             if folder_path in exclude_folders:
                 append_text_func(f"Skipping users private folder: {folder_path}")
                 return
-            else:
+            try:
                 # array that pass for file that was given
                 for filename in os.listdir(folder_path):
                     # full_path conteins the folder name and the folder content
@@ -35,14 +35,14 @@ class AntiVirus():
                     else:
                         print(f"Scanning: {full_path}")
                         self.scan_file(full_path, append_text_func)
-        #"except" - If the program can't access a folder 
-        except PermissionError:
-            append_text_func(f"Access denied: {folder_path}")
-            print(f"Access denied: {folder_path}")
-        # any other erorr
-        except Exception as e:
-            append_text_func(f"Error occurred: {folder_path} - {str(e)}")
-            print(f"Error occurred: {folder_path} - {str(e)}")
+             #"except" - If the program can't access a folder 
+             except PermissionError:
+                 append_text_func(f"Access denied: {folder_path}")
+                 print(f"Access denied: {folder_path}")
+             # any other erorr
+             except Exception as e:
+                 append_text_func(f"Error occurred: {folder_path} - {str(e)}")
+                 print(f"Error occurred: {folder_path} - {str(e)}")
         
                 
     # function that scan the directory for availability of virus
@@ -121,4 +121,5 @@ if __name__ == "__main__":
 
 
    
+
 
