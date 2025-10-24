@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+#command
+>>>>>>> d2d0b5e (uodated)
 C:\Users\nastk>echo "Hello desktop" > "%HOMEPATH%\OneDrive\Desktop\desktopcmd.txt"
 
 C:\Users\nastk>echo Hello desktop > "%USERPROFILE%\OneDrive\Desktop\desktopcmd.txt"
