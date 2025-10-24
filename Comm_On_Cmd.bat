@@ -1,6 +1,3 @@
-Microsoft Windows [Version 10.0.19045.6456]
-(c) Microsoft Corporation. All rights reserved.
-
 C:\Users\nastk>echo "Hello desktop" > "%HOMEPATH%\OneDrive\Desktop\desktopcmd.txt"
 
 C:\Users\nastk>echo Hello desktop > "%USERPROFILE%\OneDrive\Desktop\desktopcmd.txt"
